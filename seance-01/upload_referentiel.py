@@ -8,9 +8,9 @@ import boto3
 from botocore.exceptions import ClientError
 
 MINIO_ENDPOINT = "http://localhost:9000"
-MINIO_ACCESS_KEY = "eagoda-app-key"
-MINIO_SECRET_KEY = "eagoda-app-secret-2026"
-BUCKET_NAME = "eagoda-raw"
+MINIO_ACCESS_KEY = "anfa-app-key"
+MINIO_SECRET_KEY = "anfa-app-secret-2026"
+BUCKET_NAME = "anfa-raw"
 s3 = boto3.client(
 "s3",
 endpoint_url=MINIO_ENDPOINT,
