@@ -1,8 +1,8 @@
 # Rendu : Séance 6
 
-**Nom et prénom :** Denis AKPAGNONITE
-**Identifiant GitHub :** <votre-username>
-**Date de soumission :** <JJ/MM/AAAA>
+**Nom et prénom :** AGODA Essokpazim Maca Marina
+**Identifiant GitHub :** <AgodaMarina>
+**Date de soumission :** <03/07/2026>
 
 ## Résumé de la séance
 
@@ -43,4 +43,5 @@ Dans quel cas l'utiliser sur un vrai projet ?>
 
 ## Difficultés rencontrées
 
-<Aucune | Décrivez brièvement.>
+<j'ai demarré mon fihcier deckoer compose mais j'ai l'erreur  ERROR: for airflow-init  Container "8dde41438794" is unhealthy.
+ERROR: Encountered errors while bringing up the project. l'image postgres:18-alpine refuse de démarrer. Postgres 18+ a changé son format de stockage et l'ancien volume postgres-data (créé avec une image Postgres antérieure) est monté au mauvais endroit, ce qui fait crasher Postgres en boucle → jamais "healthy" → airflow-init (qui dépend de lui) reste bloqué.>

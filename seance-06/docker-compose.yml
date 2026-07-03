@@ -17,6 +17,8 @@ x-airflow-common: &airflow-common
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - /var/run/docker.sock:/var/run/docker.sock   # pour soumettre Spark via docker exec
+  group_add:
+    - "124"   # gid du groupe "docker" sur l'hôte, pour accéder à docker.sock
   depends_on:
     postgres:
       condition: service_healthy
@@ -32,7 +34,7 @@ services:
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 5s
