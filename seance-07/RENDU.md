@@ -1,8 +1,8 @@
 # Rendu — Séance 7
 
-**Nom et prénom :** <Votre nom complet>
-**Identifiant GitHub :** <votre-username>
-**Date de soumission :** <JJ/MM/AAAA>
+**Nom et prénom :** AGODA Essokpazim Maca Marina
+**Identifiant GitHub :** AgodaMarina
+**Date de soumission :** 07/07/2026
 
 ## Résumé de la séance
 
@@ -37,8 +37,7 @@ tolérance aux pannes observée, Spark Structured Streaming consommant et agrég
 
 ## Réflexion personnelle
 
-<3-5 lignes : dans quel cas utiliseriez-vous Kafka + Spark Streaming plutôt que le pipeline batch
-Airflow + Spark vu en séance 5-6 ? Qu'est-ce que la réplication à 3 brokers vous a concrètement montré ?>
+Kafka + Spark Streaming s'impose quand la donnée doit être traitée en quasi temps réel (événements continus : logs, capteurs, transactions), là où Airflow + Spark batch convient à des traitements planifiés sur des volumes déjà constitués (ex. agrégats journaliers). La réplication à 3 brokers montre concrètement la tolérance aux pannes : si un broker tombe, les partitions répliquées sur les autres garantissent qu'aucun message n'est perdu 
 
 ## Réponses aux exercices d'application
 
