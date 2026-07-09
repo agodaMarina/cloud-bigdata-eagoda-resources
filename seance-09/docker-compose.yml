@@ -58,7 +58,7 @@ services:
     container_name: anfa-grafana
     restart: unless-stopped
     ports:
-      - "3000:3000"     # UI web de Grafana
+      - "3001:3000"     # UI web de Grafana
     environment:
       GF_SECURITY_ADMIN_USER: admin
       GF_SECURITY_ADMIN_PASSWORD: admin

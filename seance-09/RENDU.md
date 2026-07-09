@@ -1,8 +1,8 @@
 # Rendu — Séance 9
 
-**Nom et prénom :** <Votre nom complet>
-**Identifiant GitHub :** <votre-username>
-**Date de soumission :** <JJ/MM/AAAA>
+**Nom et prénom :** AGODA Marina
+**Identifiant GitHub :** AgodaMarina
+**Date de soumission :** 09/07/2026
 
 ## Résumé de la séance
 
